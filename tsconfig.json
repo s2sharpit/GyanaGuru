@@ -16,8 +16,24 @@
     "incremental": true,
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/depricated/courses/[courseId]", "context/CoursesContext.js", "context/UserContext.js", "context/AuthContext.jsx", "context/CourseContext.js", ],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "pages/depricated/courses/[courseId]",
+    "context/CoursesContext.js",
+    "context/UserContext.js",
+    "context/AuthContext.jsx",
+    "context/CourseContext.js",
+    ".next/types/**/*.ts",
+    "src/context/authContext.js"
+  ],
   "exclude": ["node_modules"]
 }
